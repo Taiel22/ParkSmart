@@ -42,10 +42,75 @@
       <li><button href="#" class="w3-padding  w3-hover-border  w3-round-xxlarge w3-hover-dark-gray w3-button" onclick="openCity('Help')">Help</button></li>
       <li><button href="#" class="w3-padding  w3-hover-border  w3-round-xxlarge w3-hover-dark-gray w3-button"  >EN</button></li>
       <li><button href="#" class="w3-padding  w3-hover-border  w3-round-xxlarge w3-hover-dark-gray w3-button" onclick="openCity('products')" >Products</button></li>
-      <li><button href="#" class="w3-padding  w3-hover-border  w3-round-xxlarge w3-hover-dark-gray w3-button" onclick="openCity('login')" >Login</button></li>
-      <li><button href="#" class="w3-padding  w3-hover-border  w3-round-xxlarge w3-hover-dark-gray w3-button" onclick="openCity('signup')" >Sign up</button></li>
+      <li><button href="#" class="w3-padding w3-hover-border w3-round-xxlarge w3-hover-dark-gray w3-button" data-toggle="modal" data-target="#logInModal">Login</button></li>
+<li><button href="#" class="w3-padding w3-hover-border w3-round-xxlarge w3-hover-dark-gray w3-button" data-toggle="modal" data-target="#signInModal">Sign up</button></li>
     </ul>
   </nav>
+  <!-- Sign In Modal -->
+<div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Add your sign-in form here -->
+        <!-- Example form:
+        <form>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+        </form>
+        -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign In</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Log In Modal -->
+<div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="logInModalLabel">Log In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Add your log-in form here -->
+        
+        <form>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter username">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+        </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Log In</button>
+      </div>
+    </div>
+  </div>
+</div>
   <div id="ParkSmart" class="city">
     <div class="w-screen height-auto bg-cover bg-no repeat   bg-center bg-brightness-10"  style="background-image:url('https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/station.jpg');height:580px;width:full;position:relative">
     <div class="w3-container  w3-padding mt-24 ml-24 w3-white "  style="width:550px;height:450px;position:absolute">
@@ -55,12 +120,8 @@
     </ul><hr class="w3-border-bottom"></nav>
   <div class="w3-container"><div id="ride" class="tab">
   <h1 class="w3-xxxlarge mt-4 w3-padding"><b>Get your spot now</b></h1>
-  <div class="w3-panel w3-padding w3-margin text-gray-700 bg-gray-200" contenteditable="true">
-    Enter your location
-  </div>
-  <div class="w3-panel w3-padding text-gray-700 w3-margin bg-gray-200" contenteditable="true">
-    Enter your Destination
-  </div>
+  <Input class="w3-panel w3-padding text-gray-700 w3-margin bg-gray-200" size="54" contenteditable="true" placeholder="Enter your Location">
+  <Input class="w3-panel w3-padding text-gray-700 w3-margin bg-gray-200" size="54" contenteditable="true" placeholder="Enter your Destination">
   <button class="w3-black mt-4 ml-4 h-16 w3-padding w3-large"><b>Request Now</b></button>
   <button class="bg-gray-200 mt-4 ml-4 h-16 w3-large w3-padding">Schedule for later</button>
 </div>
