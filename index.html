@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkSmart clone</title>
+  <link rel="icon" type="image/x-icon" href="https://www.iconpacks.net/icons/2/free-parking-sign-icon-2526-thumb.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style type="text/css">
+    
+    </style>
+  </head>
+<body>
+  <nav >
+    <ul class="flex bg-gray-800  w3-text-white" style="padding:12px">
+      <li><button href="#"  class="w3-xlarge active ml-4 " onclick="openCity('ParkSmart')">ParkSmart</button></li>
+      <li><div class="dropdown">
+        <button class="w3-padding  dropdown-toggle" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Company</button>
+        <div class="dropdown-menu" id="dropdownMenuButton">
+          <a href="#" class="text-gray-300 w3-text-grey w3-hover-text-black w3-white dropdown-item">Our Offerings</a>
+          <a href="#" class="text-gray-300 w3-text-grey w3-hover-text-black w3-white dropdown-item">About us</a>
+          <a href="#" class="text-gray-300 w3-text-grey w3-hover-text-black w3-white dropdown-item">How ParkSmart works</a>
+          <a href="#" class="text-gray-300 w3-text-grey w3-hover-text-black w3-white dropdown-item">Newsroom</a>
+          <a href="#" class="text-gray-300 w3-text-grey w3-hover-text-black w3-white dropdown-item">Blog</a>
+        </div></div>
+      </li>
+      <li><button href="#" class="w3-padding  w3-hover-border  w3-round-xxlarge w3-hover-dark-gray w3-button" onclick="openCity('Safety')">Safety</button></li>
+      <li><button href="#" class="w3-padding  w3-hover-border  w3-round-xxlarge w3-hover-dark-gray w3-button" onclick="openCity('Help')">Help</button></li>
+      <li><button href="#" class="w3-padding  w3-hover-border  w3-round-xxlarge w3-hover-dark-gray w3-button"  >EN</button></li>
+      <li><button href="#" class="w3-padding  w3-hover-border  w3-round-xxlarge w3-hover-dark-gray w3-button" onclick="openCity('products')" >Products</button></li>
+      <li><button href="#" class="w3-padding  w3-hover-border  w3-round-xxlarge w3-hover-dark-gray w3-button" onclick="openCity('login')" >Login</button></li>
+      <li><button href="#" class="w3-padding  w3-hover-border  w3-round-xxlarge w3-hover-dark-gray w3-button" onclick="openCity('signup')" >Sign up</button></li>
+    </ul>
+  </nav>
+  <div id="ParkSmart" class="city">
+    <div class="w-screen height-auto bg-cover bg-no repeat   bg-center bg-brightness-10"  style="background-image:url('https://planetofhotels.com/guide/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/station.jpg');height:580px;width:full;position:relative">
+    <div class="w3-container  w3-padding mt-24 ml-24 w3-white "  style="width:550px;height:450px;position:absolute">
+    <nav><ul class="flex justify-around w3-padding">
+      <li><button href="#" class="w3-padding w3-center  " onclick="opentab('ride')"><strong><i class="fa fa-car " style="font-size: 30px;"></i><br><h1 class="w3-large mt-2">4-Wheeler</h1></strong></button></li>
+      <li><button href="#" class="w3-padding w3-center " onclick="opentab('drive')"><strong><i class='fa fa-motorcycle' style='font-size:24px'></i><br><h1 class="w3-large mt-2">2-Wheeler</h1></strong></button></li>
+    </ul><hr class="w3-border-bottom"></nav>
+  <div class="w3-container"><div id="ride" class="tab">
+  <h1 class="w3-xxxlarge mt-4 w3-padding"><b>Get your spot now</b></h1>
+  <div class="w3-panel w3-padding w3-margin text-gray-700 bg-gray-200" contenteditable="true">
+    Enter your location
+  </div>
+  <div class="w3-panel w3-padding text-gray-700 w3-margin bg-gray-200" contenteditable="true">
+    Enter your Destination
+  </div>
+  <button class="w3-black mt-4 ml-4 h-16 w3-padding w3-large"><b>Request Now</b></button>
+  <button class="bg-gray-200 mt-4 ml-4 h-16 w3-large w3-padding">Schedule for later</button>
+</div>
+
+  <div id="drive" class="tab" style="display: none">
+    <h1 class="w3-xxxlarge w3-margin w3-padding"><strong>Get to the best spot quickly!</strong></h1>
+    <p class="ml-8">Park on the platform with the largest network of active riders.</p>
+    <button class="w3-black mt-4 ml-4 w3-hover-opacity w3-padding w3-large"><b>Sign up to park</b></button><br>
+    <button class="w3-border-bottom mt-4 ml-8  w3-hover-border-black">Learn more about parking a new bike</button>
+  </div></div></div></div>
+  <div class="w-screen height-auto bg-cover bg-no repeat   bg-center bg-brightness-10"  style="background-image:url('https://nomadlist.com/cdn-cgi/image/format=auto,fit=cover,width=1500,height=750,quality=75/https://nomadlist.com/assets/img/places/karachi-pakistan.jpg?1642465552');height:300px;width:full;position:relative">
+    <h1 class="w3-xxxlarge w-black ml-16 mt-8 " style="position:absolute">ParkSmart for Business</h1>
+    <p class="ml-16 mt-24" style="position: absolute;"><b>Transform the way your company moves and feeds its people.</b></p>
+    <button class="w3-button w3-black w3-hover-opacity  ml-16 mt-52">See now </button>
+  </div>
+  <br><br>
+  <div class="grid grid-cols-2 ">
+    <div class="w-screen height-auto bg-cover bg-no repeat w3-margin ml-16 bg-center bg-brightness-10" style="background-image:url('https://wp.scoopwhoop.com/wp-content/uploads/2020/07/5f05793a18ac81629cd045d7_6834b908-13c5-4a2e-b331-5a8d33a7a047.jpg'); height:350px;width: 550px;">
+    </div>
+    <div>
+      <h1 class="w3-xxxlarge mt-24">ParkSmart Rentals</h1>
+      <p class="w3-large mt-12">Book Rentals to save time from roaming around the sameplace everyday.</p>
+      <button class="w3-border-bottom mt-8 w3-hover-border-black">Learn more</button>
+    </div>
+  </div>
+  <br><br>
+  <div class="grid grid-cols-2">
+    <div class="w3-margin w3-padding">
+      <h1 class="w3-xxxlarge mt-24">ParkSmart Intercity</h1>
+      <p class="w3-large mt-12">Book Intercity to head outstation anytime in convenient and<br> parking spots.</p>
+      <button class="w3-border-bottom mt-8 w3-hover-border-black w3-animate-left">Learn more</button>
+    </div>
+    <div class="w-screen height-auto bg-cover bg-no repeat w3-margin ml-56 bg-brightness-10" style="background-image:url('https://images.unsplash.com/photo-1494028499794-d69f55e6aba6?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzUyNDk2NA&ixlib=rb-1.2.1&q=85'); height:350px;width: 550px;">
+    </div>
+  </div>
+  <br><br>
+  <h1 class="w3-xxxlarge w3-margin w3-padding ml-16">Focused on safety, wherever you go</h1>
+  <br>
+  <div class="grid grid-cols-2 justify-around">
+    <div class="w-screen height-auto bg-cover bg-no-repeat  ml-8 bg-center bg-brightness-10" style="background-image:url('https://images.unsplash.com/photo-1611663449349-c4dbc2af39e0?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzUzNzgyMQ&ixlib=rb-1.2.1&q=85'); height:350px;width: 550px;">
+    </div>
+    <div class="w-screen height-auto bg-cover bg-no-repeat  bg-center bg-brightness-10" style="background-image:url('https://media.istockphoto.com/id/621984692/photo/traffic-security-camera.jpg?s=612x612&w=0&k=20&c=w1TrTBvor2fNfBPxfFpuTm5fShzkuHgRoVVUJcTK1sA='); height:350px;width: 550px;">
+    </div>
+    <div class="grid grid-cols-2 mt-8">
+      <div class="w3-padding ml-8 w-screen" style="width: 700px;">
+        <div class="w3-large "><h1><b>Our commitment to your safety</b></h1></div>
+        <p >With every safety feature and every standard in our Community Guidelines, we're committed to helping to create a safe environment for our users.</p>
+        <button class="w3-border-bottom mt-8 w3-hover-border-black w3-animate-left">Read about our community Guidelines</button>
+        <button class="w3-border-bottom mt-8 w3-hover-border-black ml-4 w3-animate-left">See all safety features</button>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br>
+  <div><div class="grid grid-cols-3 justify-around mt-8 ml-16" style="height: 300px;"><div><div>
+    <h1 class="w3-xlarge ml-8"><strong>About Us</strong></h1>
+    <p class="ml-8">Find out how we started, what drives us, and how we’re reimagining how the world moves.</p>
+    <button class="w3-border-bottom mt-8 w3-hover-border-black ml-8 w3-animate-left">Learn more about ParkSmart</button>
+  </div></div>
+  <div><div>
+    <h1 class="w3-xlarge ml-8"><strong>Newsroom</strong></h1>
+    <p class="ml-8">See announcements about our latest releases, initiatives, and partnerships.</p>
+    <button class="w3-border-bottom mt-8 w3-hover-border-black ml-8 w3-animate-left">Go to Newsroom</button>
+  </div></div>
+  <div class="w-screen height-auto bg-cover bg-no repeat w3-margin ml-56 bg-brightness-10" style="background-image:url('https://img.freepik.com/premium-vector/parking-space-icon-where-you-can-park-your-car-flat-vector-illustration-isolated-white-background_124715-1477.jpg'); height:300px;width: 500px;">
+  </div></div>
+  <footer class="mt-16 w-full bg-black text-white" style="height:500px">
+    <h1 class="w3-container ml-16 pt-16 w3-xxxlarge ">ParkSmart</h1>
+    <button class="w3-border-bottom mt-8 w3-border-black w3-hover-border-white mb-16 ml-20 pb-8 ">Visit help center</button>
+    <div class="grid grid-cols-4 h-auto justify-around ml-8 h-80">
+    <div >
+      <h1 class="ml-16 w3-xlarge ">Company</h1>
+      <button class="w3-hover-opacity ml-16 mt-4">About us</button><br>
+      <button class="w3-hover-opacity ml-16 mt-2">Our offerings</button><br>
+      <button class="w3-hover-opacity ml-16 mt-2">Blog</button><br>
+      <button class="w3-hover-opacity ml-16 mt-2">Gift Cards</button><br>
+    </div>
+    <div >
+      <h1 class="w3-xlarge">Products</h1>
+      <button class="w3-hover-opacity  mt-4">Park</button><br>
+      <button class="w3-hover-opacity  mt-4">ParkSmart for Business</button><br>
+    </div>
+    <div >
+      <h1 class="w3-xlarge">Client Support</h1>
+      <button class="w3-hover-opacity  mt-4">Safety</button><br>
+      <button class="w3-hover-opacity  mt-4">Inclusion</button><br>
+    </div>
+    <div >
+      <h1 class="w3-xlarge">Travel</h1>
+      <button class="w3-hover-opacity  mt-4">Airports</button><br>
+      <button class="w3-hover-opacity  mt-4">Cities</button><br>
+    </div>
+    </div>
+  </footer>   
+  <script>
+  function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+  }
+  function opentab(tabName) {
+    var i;
+    var x = document.getElementsByClassName("tab");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(tabName).style.display = "block";
+  }
+
+  </script>
+</body>
+</html>
